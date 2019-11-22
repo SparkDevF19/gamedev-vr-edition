@@ -37,6 +37,16 @@ public class ItemClickBehavior : MonoBehaviour
         }
     }
 
+    public void OnItemClicked()
+    {
+        ItemDragHandler draghandler =
+
+        gameObject.transform.Find("Border").GetComponent<ItemDragHandler>();
+
+        Debug.Log("Slot plays animation");
+        
+    }
+
     // This resets the item count to zero upon closing the game.
     private void OnApplicationQuit()
     {
